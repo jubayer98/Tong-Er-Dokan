@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.salesex"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.salesex.WELCOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SalesDiaryActivity"
+            android:label="@string/title_activity_sales_diary" >
+        </activity>
+        <activity
+            android:name=".QuantityActivity"
+            android:label="@string/title_activity_quantity" >
+        </activity>
+        <activity
+            android:name=".Qucone"
+            android:label="@string/title_activity_qucone" >
+        </activity>
+        <activity
+            android:name=".Qucup"
+            android:label="@string/title_activity_qucup" >
+        </activity>
+        <activity
+            android:name=".QuStick"
+            android:label="@string/title_activity_qu_stick" >
+        </activity>
+        <activity
+            android:name=".QuScoop"
+            android:label="@string/title_activity_qu_scoop" >
+        </activity>
+        <activity
+            android:name=".Textrrr"
+            android:label="@string/title_activity_textrrr" >
+        </activity>
+        <activity
+            android:name=".FinalDiaryCone"
+            android:label="@string/title_activity_final_diary" >
+        </activity>
+        <activity
+            android:name=".FinalDiaryCup"
+            android:label="@string/title_activity_final_diary_cup" >
+        </activity>
+        <activity
+            android:name=".FinalDiaryStick"
+            android:label="@string/title_activity_final_diary_stick" >
+        </activity>
+        <activity
+            android:name=".FinalDiaryScoop"
+            android:label="@string/title_activity_final_diary_scoop" >
+        </activity>
+    </application>
+
+</manifest>

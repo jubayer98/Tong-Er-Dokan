@@ -1,22 +1,41 @@
-# Tong-Er-Dokan
-This application can be used on your android OS based device. This is a marketing based app which mainly developed for whole sale marketing executives. This application increases flexibility to whole sales executives to sale their product via using their android devices.
+# Wholesale Marketing Executive App
 
-Ours Methodology:
-Firstly, we make different layout for different activity. In android developing layout means, the graphical user interface of application in java it’s similar to GUI. Here we used eleven different java classes which are Splash.java, Welcome.java, SalesDiaryAcitivity.java, Qucone.java, Qucup.java, Qustick.java, Quscoop.java, FinalDiaryCone.java, FinalDiaryCup.java, FinalDiaryScoop.java, FinalDiaryStick.java which are individually extends Activity class. Activity class is one kind of built in java library class.
-Splash.java is our main class, we used this class to start our program. We used multithreading system in this class for displaying welcome logo about five seconds. This class is automatically generated to start our program and move to next class which is Welcome.java. In Splash.java class we used try-catch and finally keyword for handling the exception like system failure, device cannot load the application or application stopped working type problems.
-Welcome.java is the second class of our program. We used this class to activate the activity_welcome.xml. The main work of this is to welcome the user and ask their permission to start the program. Here in this class we used a start button where an intent is used. When a user tap or touch the start button the intent brings the next layout.
-The next class is the SalesDiaryAcitivity.java. This class represents the activity_sales_diary.xml. Which is the next layout. This layout is designed as like a menu chart. Where a user can choose different products whichever they want to sale. We used different image buttons for different products for enhancing the flexibility of the application.
-We used different methods for every button. Where we used intents to instruct the button. When a user choose an image button and tap it, it will perform an action to call the next layout.
-Here we used four buttons for four different products. For every product we used different classes which are Qucone.java, Qucup.java, Qustick.java and Quscoop.java. Which represent the respective layouts activity_qucone.xml, activity_qucup.xml, activity_qu_stick.xml and activity_qu_scoop.xml. These xml layouts are designed as like a memo chart where a user can choose the quantities they want to deal. They have different options which quantity they want to choose. After every choosing action is performed the class calculate the total amount and display it on the text field. They can save the quantities and get back to the previous layout for adding more different products using the Save and Main menu button. When everything is done the user tap the Final button which will take the user to the next layout.
-In the Qucone.java, Qucup.java, Qustick.java and Quscoop.java classes we merely used the same codes as they perform the same task. We used four different button variables and four integer variable. The integer variables are initialized with some fixed integer values. The buttons are the quantity buttons. When a user tap one of these button it calls a method to perform where we initialized the integer value and save it in another variable with multiplying the SalesDairyActivity.java class’s items button value and the total amount will be shown on that particular item class text field. And when the user press the save button the multiplication value will save in an integer variable. Like this, if any user want to add more quantity of that particular item the user must press another button which value declared on that particular item class and that works like before and shows the multiplication value on textView field. When the user press save button the old one value and new one value automatically added and displayed total amount of price with total amount of quantity on that particular items. Here we used a button named “Next”. When the user tap this button it takes the app to the next layout.
-Then we created four final class of the items. Again all these four classes perform the same task. It will work by the User’s choice. When the user choose a specific item, the item’s related class will be called to do the task. We created four layouts for these four classes. There we added two buttons. One of these is the memo button. For this button we used a method which main task is to display a virtual memo of that particular item. We also used an EXIT button to minimize our application on device system tray and terminate our program for a while.
+This is an Android OS-based application developed primarily for wholesale marketing executives. The app enhances the flexibility of sales executives by allowing them to sell their products using their Android devices.
 
-Participation of Group Members:
-Md. Adib Obaid:
-He is the idea maker and leader of this group. Actually the total idea of this application based on his personal thoughts as well as he also has done application’s code and solved different activities coding problems.
+## Methodology
 
-Jubayer Alam:
-He is the designer of application’s layout as well as has done application’s code and solved different activities coding problems.
+### Layout and Structure
 
-Tasdid Rahman:
-He has solved application’s and layout’s problems in different issue and also has done application’s code and solved different activities coding problems like others.
+The application consists of multiple activities, each with a distinct layout, designed to facilitate various functions within the app. In Android development, a layout refers to the graphical user interface of an application, similar to a GUI in Java.
+
+### Java Classes
+
+We used eleven different Java classes for this application:
+
+- **Splash.java:** The main class that starts the program. It uses multithreading to display a welcome logo for five seconds before moving to the next class, `Welcome.java`. It handles exceptions using try-catch-finally blocks.
+- **Welcome.java:** Activates `activity_welcome.xml` to welcome the user and request permission to start the program. It contains a start button that triggers an intent to move to the next layout.
+- **SalesDiaryActivity.java:** Represents `activity_sales_diary.xml`, designed as a menu chart where users can choose products to sell. Different image buttons for different products enhance the application's flexibility.
+- **Qucone.java, Qucup.java, Qustick.java, Quscoop.java:** Each class represents respective layouts (`activity_qucone.xml`, `activity_qucup.xml`, `activity_qu_stick.xml`, `activity_qu_scoop.xml`). These layouts function as memo charts where users can select quantities and calculate totals.
+- **FinalDiaryCone.java, FinalDiaryCup.java, FinalDiaryScoop.java, FinalDiaryStick.java:** Final classes that perform tasks based on user choices, displaying virtual memos and providing an exit option.
+
+### Functionality
+
+- **Splash Screen:** Displays a welcome logo for five seconds using multithreading.
+- **Welcome Screen:** Welcomes the user and starts the main activity upon permission.
+- **Sales Diary:** Provides a menu to select products, with different image buttons for different products. Users can choose quantities and calculate totals.
+- **Product Selection:** Allows users to select product quantities, calculates the total amount, and saves the quantities.
+- **Final Diary:** Displays a virtual memo of selected items and provides an exit button to minimize the application.
+
+## How to Use
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/jubayer98/Tong-Er-Dokan.git
+   cd Tong-Er-Dokan
+   ```
+2. **Open in Android Studio:** Import the project into Android Studio.
+3. **Build and Run:** Compile and run the application on an Android device or emulator.
+
+---
+
+Enjoy using the Wholesale Marketing Executive App and streamline your sales process with ease!
